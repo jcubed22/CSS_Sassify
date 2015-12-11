@@ -2,13 +2,15 @@
 ================================ */
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url('fonts/gotham-rounded-medium.otf')
+  src: url('fonts/gotham-rounded-medium.otf');
 }
 body {
   background-color: #edeff0;
+  font-family: 'Gotham Rounded', sans-serif;
 }
 .container {
   width: 95%;
+  margin: 0 auto;
 }
 /* Clearfix
 ================================ */
@@ -20,6 +22,11 @@ body {
 
 /* Header
 ================================ */
+header {
+  -webkit-box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
+  -moz-box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
+  box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
+}
 .page-title {
   float: left;
 }
