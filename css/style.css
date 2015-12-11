@@ -1,0 +1,25 @@
+/* Page Wide Base Styles
+================================ */
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('fonts/gotham-rounded-medium.otf')
+}
+body {
+  background-color: #edeff0;
+}
+.container {
+  width: 95%;
+}
+/* Clearfix
+================================ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header
+================================ */
+.page-title {
+  float: left;
+}
