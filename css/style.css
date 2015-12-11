@@ -30,3 +30,31 @@ header {
 .page-title {
   float: left;
 }
+.navbar {
+  float: right;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  vertical-align: middle;
+  float: left;
+  padding: 0 20px;
+}
+nav ul li:first-child,
+nav ul li:nth-child(2) {
+  border-right: 1px solid #d4d9dd;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #b6bfc6;
+}
+#nav-text {
+  position: relative;
+  margin-right: 10px;
+  bottom: 4.5px;
+}
+
+/* Main Content
+================================ */
