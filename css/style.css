@@ -4,6 +4,13 @@
   font-family: 'Gotham Rounded';
   src: url('fonts/gotham-rounded-medium.otf');
 }
+@font-face {
+  font-family: 'Gotham Rounded Light';
+  src: url('fonts/gotham-rounded-light.otf');
+}
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #edeff0;
   font-family: 'Gotham Rounded', sans-serif;
@@ -50,6 +57,9 @@ nav ul li a {
   text-decoration: none;
   color: #b6bfc6;
 }
+#user-icon {
+  margin-right: 10px;
+}
 #nav-text {
   position: relative;
   margin-right: 10px;
@@ -58,3 +68,90 @@ nav ul li a {
 
 /* Main Content
 ================================ */
+.course-tile {
+  border-radius: 5px 5px 4px 4px;
+  float: left;
+  margin: 30px 15px;
+  width: 50%;
+  background-color: #ffffff;
+}
+.tile-header {
+  position: relative;
+  padding: 0 30px;
+  background-color: #009779;
+  height: 60px;
+  border-radius: 5px 5px 0 0;
+}
+.course-icon {
+  float: left;
+  position: absolute;
+  top: 15px;
+}
+.course-time {
+  float: right;
+  height: 100%;
+  font-size: .8em;
+  color: #fff;
+}
+.course-time p {
+  margin-top: 22px;
+}
+.tile-body {
+  color: #798b8e;
+  padding: 10px 30px;
+}
+.tile-body p:first-child {
+  font-size: .9em;
+  margin-bottom: .5em;
+}
+.tile-body p:nth-child(3) {
+  font-family: 'Gotham Rounded Light';
+  font-size: .9em;
+}
+.course-name {
+  margin-top: 0;
+  color: #4a5658;
+}
+.tags {
+  list-style: none;
+  float: left;
+  padding: 12px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.tags>li {
+  float: left;
+  margin: 0 7px 9px 0;
+  line-height: 32px;
+}
+.tags>li>a {
+  float: left;
+  border-radius: 100px;
+  background: transparent;
+  border: 2px solid rgba(48, 73, 96, 0.1);
+  font-size: 13px;
+  line-height: 32px;
+  height: 100%;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+.tile-footer a {
+  text-decoration: none;
+  color: #4a5658;
+}
+#java {
+  color: #009779;
+}
+.language {
+  -webkit-transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+  transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+}
+.language:hover {
+  border-color: #009779;
+}
+.card-actions {
+  float: right;
+}
+.card-actions li {
+  display: inline;
+}
