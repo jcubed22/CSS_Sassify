@@ -69,18 +69,42 @@ nav ul li a {
 /* Main Content
 ================================ */
 .course-tile {
+  box-shadow: 0 2px rgba(0,0,0,0.06);
   border-radius: 5px 5px 4px 4px;
-  float: left;
-  margin: 30px 15px;
-  width: 50%;
+  margin: 10px 15px;
   background-color: #ffffff;
+  min-height: 310px;
+  position: relative;
+}
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+.course-list-item {
+  float: left;
+  width: 50%;
+  min-width: 400px;
 }
 .tile-header {
   position: relative;
   padding: 0 30px;
-  background-color: #009779;
   height: 60px;
   border-radius: 5px 5px 0 0;
+}
+.course-icon ul {
+  list-style: none;
+  padding: 0;
+}
+.course-icon ul li {
+  display: inline;
+}
+.course-icon ul li:first-child {
+  margin-right: 15px;
+}
+.progress {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 5px;
 }
 .course-icon {
   float: left;
@@ -139,19 +163,48 @@ nav ul li a {
   text-decoration: none;
   color: #4a5658;
 }
-#java {
-  color: #009779;
-}
 .language {
   -webkit-transition: border-color .15s ease, background-color .15s ease, color .15s ease;
   transition: border-color .15s ease, background-color .15s ease, color .15s ease;
 }
-.language:hover {
-  border-color: #009779;
-}
 .card-actions {
   float: right;
+  line-height: 32px;
+  padding: 12px 0 12px 0;
+}
+.card-actions>li:first-child {
+  margin-right: 7px;
 }
 .card-actions li {
   display: inline;
+}
+
+/* Language Specific Styles
+================================ */
+.java {
+  background-color: #009779;
+}
+.java-btn {
+  color: #009779;
+}
+.java-hover:hover {
+  border-color: #009779;
+}
+.python {
+  background-color: #f890ae;
+}
+.python-btn {
+  color: #f890ae;
+}
+.python-hover:hover {
+  border-color: #f890ae;
+}
+.wordpress {
+  background-color: #838bc4;
+}
+.wordpress-btn {
+  color: #838bc4;
+}
+.wordpress-hover:hover {
+  border-color: #838bc4;
 }
