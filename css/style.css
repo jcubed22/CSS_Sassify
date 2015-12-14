@@ -232,10 +232,15 @@ nav ul li a {
   border-color: #838bc4;
 }
 
-/* Media Querie
+/* Media Query
 ================================ */
 @media (max-width: 842px) {
   .course-list-item {
     width: 100%;
+  }
+}
+@media (min-width: 1300px) {
+  .course-list-item {
+    width: 33%;
   }
 }
