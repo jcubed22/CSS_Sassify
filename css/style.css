@@ -22,7 +22,7 @@ body {
 /* Clearfix
 ================================ */
 .clearfix:after {
-  content: "";
+  content: " ";
   display: table;
   clear: both;
 }
@@ -137,11 +137,13 @@ nav ul li a {
   color: #4a5658;
 }
 .tags {
+  position: absolute;
   list-style: none;
-  float: left;
+  /*float: left;*/
   padding: 12px;
   padding-left: 0;
   margin-bottom: 0;
+  bottom: 5%;
 }
 .tags>li {
   float: left;
@@ -168,9 +170,12 @@ nav ul li a {
   transition: border-color .15s ease, background-color .15s ease, color .15s ease;
 }
 .card-actions {
-  float: right;
+  position: absolute;
+  /*float: right;*/
   line-height: 32px;
   padding: 12px 0 12px 0;
+  bottom: 5%;
+  right: 7%;
 }
 .card-actions>li:first-child {
   margin-right: 7px;
@@ -178,7 +183,25 @@ nav ul li a {
 .card-actions li {
   display: inline;
 }
-
+#trailers {
+  background-image: url('../img/treehouse-popup.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 10px 20px;
+  width: 217px;
+  height: 143px;
+  font-size: 16px;
+  color: #374047;
+  right: -1%;
+  bottom: 18%;
+  z-index: 100;
+}
+#trailers p:nth-child(2) {
+  font-family:  'Gotham Rounded Light';
+  font-size: 12px;
+  color: #a4b0b2;
+  margin-top: 6px;
+}
 /* Language Specific Styles
 ================================ */
 .java {
@@ -207,4 +230,12 @@ nav ul li a {
 }
 .wordpress-hover:hover {
   border-color: #838bc4;
+}
+
+/* Media Querie
+================================ */
+@media (max-width: 842px) {
+  .course-list-item {
+    width: 100%;
+  }
 }
