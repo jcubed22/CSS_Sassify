@@ -1,121 +1,137 @@
+/* Base Styles
+================================ */
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #edeff0;
+  font-family: "Gotham Rounded", Helvetica, Arial, sans-serif; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
 
 /* Clearfix
 ================================ */
-.clearfix:after {
+header:after, .main-content:after, .course-list:after, .tile-header:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("../fonts/gotham-rounded-medium.otf"); }
+@font-face {
+  font-family: "Gotham Rounded Light";
+  src: url("../fonts/gotham-rounded-light.otf"); }
 /* Header
 ================================ */
 header {
-  -webkit-box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
-  -moz-box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
-  box-shadow: 0px 10px 5px -8px rgba(211,211,211,1);
-}
+  -webkit-box-shadow: 0px 10px 5px -8px lightgray;
+  -moz-box-shadow: 0px 10px 5px -8px lightgray;
+  box-shadow: 0px 10px 5px -8px lightgray; }
+
 .page-title {
-  float: left;
-}
+  float: left; }
+
 .navbar {
   float: right;
-  position: relative;
-}
+  position: relative; }
+
 nav ul {
-  list-style: none;
-}
+  list-style: none; }
+
 nav ul li {
   vertical-align: middle;
   float: left;
-  padding: 0 20px;
-}
+  padding: 0 20px; }
+
 nav ul li:first-child,
 nav ul li:nth-child(2) {
-  border-right: 1px solid #d4d9dd;
-}
+  border-right: 1px solid #d4d9dd; }
+
 nav ul li a {
   text-decoration: none;
-  color: #b6bfc6;
-}
+  color: #b6bfc6; }
+
 #user-icon {
-  margin-right: 10px;
-}
+  margin-right: 10px; }
+
 #nav-text {
   position: relative;
   margin-right: 10px;
-  bottom: 4.5px;
-}
+  bottom: 4.5px; }
 
 /* Main Content
 ================================ */
 .course-tile {
-  box-shadow: 0 2px rgba(0,0,0,0.06);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.06);
   border-radius: 5px 5px 4px 4px;
   margin: 10px 15px;
   background-color: #ffffff;
   min-height: 310px;
-  position: relative;
-}
+  position: relative; }
+
 .course-list {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
+
 .course-list-item {
   float: left;
   width: 50%;
-  min-width: 400px;
-}
+  min-width: 400px; }
+
 .tile-header {
   position: relative;
   padding: 0 30px;
   height: 60px;
-  border-radius: 5px 5px 0 0;
-}
+  border-radius: 5px 5px 0 0; }
+
 .course-icon ul {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
+
 .course-icon ul li {
-  display: inline;
-}
+  display: inline; }
+
 .course-icon ul li:first-child {
-  margin-right: 15px;
-}
+  margin-right: 15px; }
+
 .progress {
   width: 12px;
   height: 12px;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
+
 .course-icon {
   float: left;
   position: absolute;
-  top: 15px;
-}
+  top: 15px; }
+
 .course-time {
   float: right;
   height: 100%;
   font-size: .8em;
-  color: #fff;
-}
+  color: #fff; }
+
 .course-time p {
-  margin-top: 22px;
-}
+  margin-top: 22px; }
+
 .tile-body {
   color: #798b8e;
-  padding: 10px 30px;
-}
+  padding: 10px 30px; }
+
 .tile-body p:first-child {
   font-size: .9em;
-  margin-bottom: .5em;
-}
+  margin-bottom: .5em; }
+
 .tile-body p:nth-child(3) {
   font-family: 'Gotham Rounded Light';
-  font-size: .9em;
-}
+  font-size: .9em; }
+
 .course-name {
   margin-top: 0;
-  color: #4a5658;
-}
+  color: #4a5658; }
+
 .tags {
   position: absolute;
   list-style: none;
@@ -123,14 +139,14 @@ nav ul li a {
   padding: 12px;
   padding-left: 0;
   margin-bottom: 0;
-  bottom: 5%;
-}
-.tags>li {
+  bottom: 5%; }
+
+.tags > li {
   float: left;
   margin: 0 7px 9px 0;
-  line-height: 32px;
-}
-.tags>li>a {
+  line-height: 32px; }
+
+.tags > li > a {
   float: left;
   border-radius: 100px;
   background: transparent;
@@ -139,32 +155,32 @@ nav ul li a {
   line-height: 32px;
   height: 100%;
   padding: 0 12px;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
+
 .tile-footer a {
   text-decoration: none;
-  color: #4a5658;
-}
+  color: #4a5658; }
+
 .language {
   -webkit-transition: border-color .15s ease, background-color .15s ease, color .15s ease;
-  transition: border-color .15s ease, background-color .15s ease, color .15s ease;
-}
+  transition: border-color .15s ease, background-color .15s ease, color .15s ease; }
+
 .card-actions {
   position: absolute;
   /*float: right;*/
   line-height: 32px;
   padding: 12px 0 12px 0;
   bottom: 5%;
-  right: 7%;
-}
-.card-actions>li:first-child {
-  margin-right: 7px;
-}
+  right: 7%; }
+
+.card-actions > li:first-child {
+  margin-right: 7px; }
+
 .card-actions li {
-  display: inline;
-}
+  display: inline; }
+
 #trailers {
-  background-image: url('../img/treehouse-popup.png');
+  background-image: url("../img/treehouse-popup.png");
   background-repeat: no-repeat;
   position: absolute;
   padding: 10px 20px;
@@ -174,53 +190,50 @@ nav ul li a {
   color: #374047;
   right: -1%;
   bottom: 18%;
-  z-index: 100;
-}
+  z-index: 100; }
+
 #trailers p:nth-child(2) {
-  font-family:  'Gotham Rounded Light';
+  font-family: 'Gotham Rounded Light';
   font-size: 12px;
   color: #a4b0b2;
-  margin-top: 6px;
-}
+  margin-top: 6px; }
+
 /* Language Specific Styles
 ================================ */
 .java {
-  background-color: #009779;
-}
+  background-color: #009779; }
+
 .java-btn {
-  color: #009779;
-}
+  color: #009779; }
+
 .java-hover:hover {
-  border-color: #009779;
-}
+  border-color: #009779; }
+
 .python {
-  background-color: #f890ae;
-}
+  background-color: #f890ae; }
+
 .python-btn {
-  color: #f890ae;
-}
+  color: #f890ae; }
+
 .python-hover:hover {
-  border-color: #f890ae;
-}
+  border-color: #f890ae; }
+
 .wordpress {
-  background-color: #838bc4;
-}
+  background-color: #838bc4; }
+
 .wordpress-btn {
-  color: #838bc4;
-}
+  color: #838bc4; }
+
 .wordpress-hover:hover {
-  border-color: #838bc4;
-}
+  border-color: #838bc4; }
 
 /* Media Query
 ================================ */
 @media (max-width: 842px) {
   .course-list-item {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 @media (min-width: 1300px) {
   .course-list-item {
-    width: 33%;
-  }
-}
+    width: 33%; } }
+
+/*# sourceMappingURL=application.css.map */
